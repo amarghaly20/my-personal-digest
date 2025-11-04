@@ -1,5 +1,4 @@
 from fetch_stock_news import get_stock_news
-from fetch_science_news import get_science_news
 from summarize import summarize_text
 from mailer import send_digest
 import datetime
@@ -12,13 +11,6 @@ def build_digest():
     stocks = get_stock_news(max_items=3)
     for article in stocks:
         summary = summarize_text(article)
-        digest.append(f"- {summary}\n")
-
-    # Science News
-    digest.append("\n🔬 Science Digest:\n")
-    science = get_science_news(max_items=3)
-    for paper in science:
-        summary = summarize_text(paper)
         digest.append(f"- {summary}\n")
 
     return "".join(digest)
