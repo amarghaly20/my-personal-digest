@@ -1,0 +1,90 @@
+Traceback (most recent call last):
+  File "/Users/amarghaly/personal-digest/src/main.py", line 1, in <module>
+    from fetch_stock_news import get_stock_news
+  File "/Users/amarghaly/personal-digest/src/fetch_stock_news.py", line 2, in <module>
+    import requests
+  File "/Users/amarghaly/personal-digest/src/venv/lib/python3.13/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/Users/amarghaly/personal-digest/src/venv/lib/python3.13/site-packages/urllib3/__init__.py", line 14, in <module>
+    from . import exceptions
+  File "/Users/amarghaly/personal-digest/src/venv/lib/python3.13/site-packages/urllib3/exceptions.py", line 6, in <module>
+    from email.errors import MessageDefect
+  File "/Users/amarghaly/personal-digest/src/email.py", line 1, in <module>
+    import smtplib
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/smtplib.py", line 47, in <module>
+    import email.utils
+ModuleNotFoundError: No module named 'email.utils'; 'email' is not a package
+Device set to use mps:0
+⚡ Generating Personal Digest...
+
+🔍 Fetching stock news with query: "Tesla stock" OR "Apple stock" OR "AI stocks" OR "Palantir"
+🔍 Fetching science news with keywords: ['neuroscience', 'genomics', 'climate change', 'AI']
+📡 Checking feed: AI (http://export.arxiv.org/rss/cs.AI)
+📊 Stock Digest:
+- [General | Yahoo Entertainment] Nvidia Becomes World's Largest Company, Hits $4.5 Trillion Market Cap — 2025-10-01 (https://finance.yahoo.com/news/nvidia-becomes-worlds-largest-company-122555338.html)
+- [Tesla | Yahoo Entertainment] Tesla Roadster Booking Canceled by Popular YouTuber MKBHD: 'Tesla Has Been Sitting With My 50 Grand For Eight Years' — 2025-10-01 (https://finance.yahoo.com/news/tesla-roadster-booking-canceled-popular-113114250.html)
+- [AI | Yahoo Entertainment] 3 of the Best AI Stocks to Buy in October — 2025-10-01 (https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_9475ed2d-257e-4a55-bf1c-62c48c7fbe67)
+
+🔬 Science Digest:
+- Learning to Lead Themselves: Agentic AI in MAS using MARL — https://arxiv.org/abs/2510.00022
+- ToolBrain: A Flexible Reinforcement Learning Framework for Agentic Tools — https://arxiv.org/abs/2510.00023
+- ARS: Adaptive Reasoning Suppression for Efficient Large Reasoning Language Models — https://arxiv.org/abs/2510.00071
+
+Traceback (most recent call last):
+  File "/Users/amarghaly/personal-digest/src/main.py", line 32, in <module>
+    send_digest(subject, digest)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/amarghaly/personal-digest/src/mailer.py", line 15, in send_digest
+    with open("recipients.json") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'recipients.json'
+Device set to use mps:0
+⚡ Generating Personal Digest...
+
+🔍 Fetching stock news with query: "Tesla stock" OR "Apple stock" OR "AI stocks" OR "Palantir"
+🔍 Fetching science news with keywords: ['neuroscience', 'genomics', 'climate change', 'AI']
+📡 Checking feed: AI (http://export.arxiv.org/rss/cs.AI)
+📊 Stock Digest:
+- [General | Yahoo Entertainment] What Makes Lululemon Athletica (LULU) a Compelling Bet? — 2025-10-09 (https://finance.yahoo.com/news/makes-lululemon-athletica-lulu-compelling-125600648.html)
+- [General | Yahoo Entertainment] Here’s What Lifted Monolithic Power Systems (MPWR) in Q3 — 2025-10-09 (https://finance.yahoo.com/news/lifted-monolithic-power-systems-mpwr-124503804.html)
+- [General | Yahoo Entertainment] Here’s What Makes AppLovin Corporation (APP) a Standout Performer in Q3 — 2025-10-09 (https://finance.yahoo.com/news/makes-applovin-corporation-app-standout-123147810.html)
+
+🔬 Science Digest:
+- Truth-Aware Decoding: A Program-Logic Approach to Factual Language Generation — https://arxiv.org/abs/2510.07331
+- L2M-AID: Autonomous Cyber-Physical Defense by Fusing Semantic Reasoning of Large Language Models with Multi-Agent Reinforcement Learning (Preprint) — https://arxiv.org/abs/2510.07363
+- Base Models Know How to Reason, Thinking Models Learn When — https://arxiv.org/abs/2510.07364
+
+Traceback (most recent call last):
+  File "/Users/amarghaly/personal-digest/src/main.py", line 32, in <module>
+    send_digest(subject, digest)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/amarghaly/personal-digest/src/mailer.py", line 15, in send_digest
+    with open("recipients.json") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'recipients.json'
+Device set to use mps:0
+⚡ Generating Personal Digest...
+
+🔍 Fetching stock news with query: "Tesla stock" OR "Apple stock" OR "AI stocks" OR "Palantir"
+🔍 Fetching science news with keywords: ['neuroscience', 'genomics', 'climate change', 'AI']
+📡 Checking feed: AI (http://export.arxiv.org/rss/cs.AI)
+📡 Checking feed: ML (http://export.arxiv.org/rss/cs.LG)
+📡 Checking feed: Neuroscience (http://export.arxiv.org/rss/q-bio.NC)
+📡 Checking feed: Economics (http://export.arxiv.org/rss/econ.EM)
+📡 Checking feed: Physics (http://export.arxiv.org/rss/physics.comp-ph)
+📊 Stock Digest:
+- [General | Yahoo Entertainment] High-income spending slowdown is big threat to US economy: Zandi — 2025-10-17 (https://finance.yahoo.com/video/high-income-spending-slowdown-big-154048769.html)
+- [General | Yahoo Entertainment] Northland, Mizuho Cut DraftKings (DKNG) PT Amid Rising Competitive Threat from Prediction Markets — 2025-10-17 (https://finance.yahoo.com/news/northland-mizuho-cut-draftkings-dkng-152119609.html)
+- [General | Yahoo Entertainment] Stifel Upgrades Amcor (AMCR) to Buy Despite PT Cut, Cites Scale from Berry Merger, While Wells Fargo Cites Sluggish Volumes — 2025-10-17 (https://finance.yahoo.com/news/stifel-upgrades-amcor-amcr-buy-151932849.html)
+
+🔬 Science Digest:
+- ⚠️ No science articles found for your keywords.
+
+Traceback (most recent call last):
+  File "/Users/amarghaly/personal-digest/src/main.py", line 32, in <module>
+    send_digest(subject, digest)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/amarghaly/personal-digest/src/mailer.py", line 15, in send_digest
+    with open("recipients.json") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'recipients.json'
