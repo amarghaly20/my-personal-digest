@@ -8,7 +8,7 @@ def build_digest():
 
     # Stock News
     digest.append("📊 Stock Digest:\n")
-    stocks = get_stock_news(max_items=3)
+    stocks = get_stock_news(max_items=5)
     for article in stocks:
         summary = summarize_text(article)
         digest.append(f"- {summary}\n")
